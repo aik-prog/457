@@ -1,0 +1,390 @@
+{
+ "version": 1,
+ "contact": {
+  "person": "Rangga Yudhi",
+  "phone": "+62 858-7958-2495",
+  "wa": "6285879582495",
+  "email": "cvempatlimatujuh@gmail.com",
+  "address": "Jl. Rimat Bakti, Kembanan, Ds. Terban, RT 01/RW 01, Kec. Warungasem, Kab. Batang, Jawa Tengah",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Desa+Terban+Warungasem+Batang+Jawa+Tengah"
+ },
+ "portfolio": [
+  {
+   "id": "mekanikal-elektrikal",
+   "title": "Pek. Mekanikal Elektrikal",
+   "cat": "mep",
+   "photos": [
+    {
+     "src": "img/p-mekanikal-elektrikal-1.webp",
+     "thumb": "img/p-mekanikal-elektrikal-1-t.webp"
+    },
+    {
+     "src": "img/p-mekanikal-elektrikal-2.webp",
+     "thumb": "img/p-mekanikal-elektrikal-2-t.webp"
+    },
+    {
+     "src": "img/p-mekanikal-elektrikal-3.webp",
+     "thumb": "img/p-mekanikal-elektrikal-3-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "elektrikal",
+   "title": "Pek. Elektrikal",
+   "cat": "mep",
+   "photos": [
+    {
+     "src": "img/p-elektrikal-1.webp",
+     "thumb": "img/p-elektrikal-1-t.webp"
+    },
+    {
+     "src": "img/p-elektrikal-2.webp",
+     "thumb": "img/p-elektrikal-2-t.webp"
+    },
+    {
+     "src": "img/p-elektrikal-3.webp",
+     "thumb": "img/p-elektrikal-3-t.webp"
+    },
+    {
+     "src": "img/p-elektrikal-4.webp",
+     "thumb": "img/p-elektrikal-4-t.webp"
+    },
+    {
+     "src": "img/p-elektrikal-5.webp",
+     "thumb": "img/p-elektrikal-5-t.webp"
+    },
+    {
+     "src": "img/p-elektrikal-6.webp",
+     "thumb": "img/p-elektrikal-6-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "plumbing",
+   "title": "Pek. Plumbing",
+   "cat": "mep",
+   "photos": [
+    {
+     "src": "img/p-plumbing-1.webp",
+     "thumb": "img/p-plumbing-1-t.webp"
+    },
+    {
+     "src": "img/p-plumbing-2.webp",
+     "thumb": "img/p-plumbing-2-t.webp"
+    },
+    {
+     "src": "img/p-plumbing-3.webp",
+     "thumb": "img/p-plumbing-3-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "guardrail",
+   "title": "Pek. Guardrail",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-guardrail-1.webp",
+     "thumb": "img/p-guardrail-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "penanganan-longsor",
+   "title": "Penanganan Longsor",
+   "cat": "air",
+   "photos": [
+    {
+     "src": "img/p-penanganan-longsor-1.webp",
+     "thumb": "img/p-penanganan-longsor-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "rambu-informasi",
+   "title": "Rambu Informasi",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-rambu-informasi-1.webp",
+     "thumb": "img/p-rambu-informasi-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "pemasangan-fo",
+   "title": "Pemasangan Fiber Optik",
+   "cat": "fo",
+   "photos": [
+    {
+     "src": "img/p-pemasangan-fo-1.webp",
+     "thumb": "img/p-pemasangan-fo-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "u-ditch",
+   "title": "Pek. Saluran U-Ditch",
+   "cat": "air",
+   "photos": [
+    {
+     "src": "img/p-u-ditch-1.webp",
+     "thumb": "img/p-u-ditch-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "reflektor-jalan",
+   "title": "Reflektor Jalan",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-reflektor-jalan-1.webp",
+     "thumb": "img/p-reflektor-jalan-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "bronjong",
+   "title": "Pek. Bronjong",
+   "cat": "air",
+   "photos": [
+    {
+     "src": "img/p-bronjong-1.webp",
+     "thumb": "img/p-bronjong-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "pengecatan-mcb",
+   "title": "Pengecatan MCB",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-pengecatan-mcb-1.webp",
+     "thumb": "img/p-pengecatan-mcb-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "instalasi-fo",
+   "title": "Instalasi Fiber Optik",
+   "cat": "fo",
+   "photos": [
+    {
+     "src": "img/p-instalasi-fo-1.webp",
+     "thumb": "img/p-instalasi-fo-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "drainase-beton",
+   "title": "Pek. Drainase Beton",
+   "cat": "air",
+   "photos": [
+    {
+     "src": "img/p-drainase-beton-1.webp",
+     "thumb": "img/p-drainase-beton-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "rambu-jalan",
+   "title": "Pekerjaan Rambu Jalan",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-rambu-jalan-1.webp",
+     "thumb": "img/p-rambu-jalan-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "perkerasan-beton",
+   "title": "Pek. Perkerasan Beton",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-perkerasan-beton-1.webp",
+     "thumb": "img/p-perkerasan-beton-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "pembersihan-saluran",
+   "title": "Pembersihan Saluran",
+   "cat": "air",
+   "photos": [
+    {
+     "src": "img/p-pembersihan-saluran-1.webp",
+     "thumb": "img/p-pembersihan-saluran-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "pengecatan-guardrail",
+   "title": "Pengecatan Guardrail",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-pengecatan-guardrail-1.webp",
+     "thumb": "img/p-pengecatan-guardrail-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "pagar-pembatas",
+   "title": "Pek. Pagar Pembatas",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-pagar-pembatas-1.webp",
+     "thumb": "img/p-pagar-pembatas-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "penutup-saluran",
+   "title": "Pek. Penutup Saluran",
+   "cat": "air",
+   "photos": [
+    {
+     "src": "img/p-penutup-saluran-1.webp",
+     "thumb": "img/p-penutup-saluran-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "pembersihan-mcb",
+   "title": "Pembersihan MCB/Beton",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-pembersihan-mcb-1.webp",
+     "thumb": "img/p-pembersihan-mcb-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "rambu-fasilitas",
+   "title": "Pek. Rambu Fasilitas Jalan",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-rambu-fasilitas-1.webp",
+     "thumb": "img/p-rambu-fasilitas-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "pengecatan-kanstin",
+   "title": "Pengecatan Kanstin",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-pengecatan-kanstin-1.webp",
+     "thumb": "img/p-pengecatan-kanstin-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "pengecatan-struktur",
+   "title": "Pengecatan Struktur",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-pengecatan-struktur-1.webp",
+     "thumb": "img/p-pengecatan-struktur-1-t.webp"
+    }
+   ]
+  },
+  {
+   "id": "pemotongan-rumput",
+   "title": "Pemotongan Rumput",
+   "cat": "jalan",
+   "photos": [
+    {
+     "src": "img/p-pemotongan-rumput-1.webp",
+     "thumb": "img/p-pemotongan-rumput-1-t.webp"
+    }
+   ]
+  }
+ ],
+ "clients": [
+  {
+   "id": "waskita",
+   "name": "Waskita",
+   "logo": "img/c-waskita.webp"
+  },
+  {
+   "id": "nindya",
+   "name": "Nindya",
+   "logo": "img/c-nindya.webp"
+  },
+  {
+   "id": "pbtr",
+   "name": "Pemalang Batang Tol Road",
+   "logo": "img/c-pbtr.webp"
+  },
+  {
+   "id": "industropolis",
+   "name": "Industropolis Batang",
+   "logo": "img/c-industropolis.webp"
+  },
+  {
+   "id": "indoprima",
+   "name": "Indoprima Trans",
+   "logo": "img/c-indoprima.webp"
+  },
+  {
+   "id": "nesinak",
+   "name": "Nesinak",
+   "logo": "img/c-nesinak.webp"
+  },
+  {
+   "id": "bolesca",
+   "name": "Bolesca Food",
+   "logo": "img/c-bolesca.webp"
+  },
+  {
+   "id": "fondfashion",
+   "name": "Fondfashion Seamless Garment",
+   "logo": "img/c-fondfashion.webp"
+  },
+  {
+   "id": "orlando",
+   "name": "Orlando Aristo",
+   "logo": "img/c-orlando.webp"
+  },
+  {
+   "id": "wicaksana",
+   "name": "Wicaksana Outdoor Advertising",
+   "logo": "img/c-wicaksana.webp"
+  },
+  {
+   "id": "rsi",
+   "name": "RSI Al-Ikhlas Pemalang",
+   "logo": "img/c-rsi.webp"
+  },
+  {
+   "id": "p-logo",
+   "name": "",
+   "logo": "img/c-p-logo.webp"
+  },
+  {
+   "id": "sanbao",
+   "name": "Sanbao Restaurant",
+   "logo": ""
+  },
+  {
+   "id": "jawa-raya",
+   "name": "PT. Jawa Raya Abadi",
+   "logo": ""
+  },
+  {
+   "id": "wisco",
+   "name": "PT. Wisco Kayu Indonesia",
+   "logo": ""
+  }
+ ]
+}

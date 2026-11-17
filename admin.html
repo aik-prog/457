@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin | CV. Empat Lima Tujuh</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="img/logo-457.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="adm">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-del" viewBox="0 0 24 24"><path d="M5 7h14M10 7V5h4v2M7 7l1 13h8l1-13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-ref" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 5v6h-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<div class="login" id="login" hidden>
+  <form class="login-card" id="login-form" novalidate>
+    <img src="img/logo-457.png" alt="" width="52" height="37">
+    <h1>Admin 457Corp</h1>
+    <p>Masuk untuk melihat permintaan penawaran dan mengubah isi website.</p>
+    <div class="field"><label for="pw">Kata sandi admin</label><input id="pw" type="password" autocomplete="current-password" required></div>
+    <button class="btn btn-navy" type="submit" id="login-btn"><span class="spin" aria-hidden="true"></span>Masuk</button>
+    <p class="a-err" id="login-err" role="alert"></p>
+    <p class="a-cfg" id="login-cfg"></p>
+    <a class="back" href="./">Kembali ke website</a>
+  </form>
+</div>
+
+<div id="app" hidden>
+  <header class="a-top">
+    <div class="a-wrap a-top-in">
+      <a class="a-brand" href="./" title="Lihat website"><img src="img/logo-457.png" alt="" width="34" height="24"><span><b>Admin 457Corp</b><small>CV. Empat Lima Tujuh</small></span></a>
+      <nav class="a-tabs" role="tablist" aria-label="Menu admin">
+        <button role="tab" type="button" data-tab="leads" aria-selected="true">Pesan masuk <span class="cnt" id="cnt-new" hidden>0</span></button>
+        <button role="tab" type="button" data-tab="porto" aria-selected="false">Portofolio</button>
+        <button role="tab" type="button" data-tab="clients" aria-selected="false">Klien</button>
+        <button role="tab" type="button" data-tab="contact" aria-selected="false">Kontak</button>
+      </nav>
+      <div class="a-acts"><a class="btn btn-line sm" href="./" target="_blank" rel="noopener">Lihat website</a><button class="btn btn-line sm" type="button" id="logout">Keluar</button></div>
+    </div>
+  </header>
+
+  <main class="a-wrap a-main">
+    <div id="a-status"></div>
+
+    <section class="tab" id="tab-leads" role="tabpanel">
+      <div class="a-head">
+        <div><h2>Pesan masuk</h2><p>Permintaan penawaran dari form di halaman Kontak.</p></div>
+        <div class="a-tools">
+          <input type="search" id="lead-q" placeholder="Cari nama, nomor, atau pekerjaan" aria-label="Cari pesan">
+          <button class="btn btn-line sm" type="button" id="lead-refresh"><svg class="ic"><use href="#i-ref"/></svg>Muat ulang</button>
+          <button class="btn btn-line sm" type="button" id="lead-csv"><svg class="ic"><use href="#i-dl"/></svg>Unduh CSV</button>
+        </div>
+      </div>
+      <div class="seg" id="lead-filter" role="group" aria-label="Saring status">
+        <button type="button" data-s="semua" aria-pressed="true">Semua <span></span></button>
+        <button type="button" data-s="baru" aria-pressed="false">Baru <span></span></button>
+        <button type="button" data-s="dihubungi" aria-pressed="false">Dihubungi <span></span></button>
+        <button type="button" data-s="selesai" aria-pressed="false">Selesai <span></span></button>
+      </div>
+      <div id="leads" class="leads"></div>
+    </section>
+
+    <section class="tab" id="tab-porto" role="tabpanel" hidden>
+      <div class="a-head">
+        <div><h2>Portofolio</h2><p>Urutan di sini sama dengan urutan di website. Proyek pertama tampil paling besar.</p></div>
+        <div class="a-tools"><button class="btn btn-navy sm" type="button" id="porto-add"><svg class="ic"><use href="#i-plus"/></svg>Tambah proyek</button></div>
+      </div>
+      <div id="porto-list" class="rows"></div>
+    </section>
+
+    <section class="tab" id="tab-clients" role="tabpanel" hidden>
+      <div class="a-head"><div><h2>Klien</h2><p>Tampil sebagai logo berjalan di Beranda dan Tentang. Klien tanpa logo tampil sebagai nama.</p></div></div>
+      <form class="card add-client" id="client-form" novalidate>
+        <div class="field"><label for="c-name">Nama klien</label><input id="c-name" maxlength="120" placeholder="Contoh: PT Contoh Jaya"></div>
+        <div class="field"><label for="c-logo">Logo (opsional)</label><input id="c-logo" type="file" accept="image/png,image/jpeg,image/webp"></div>
+        <button class="btn btn-navy" type="submit" id="c-add"><span class="spin" aria-hidden="true"></span>Tambah klien</button>
+      </form>
+      <div id="client-list" class="rows"></div>
+    </section>
+
+    <section class="tab" id="tab-contact" role="tabpanel" hidden>
+      <div class="a-head"><div><h2>Kontak</h2><p>Dipakai di header, footer, halaman Kontak, tombol WhatsApp, dan email notifikasi.</p></div></div>
+      <form class="card contact-form" id="contact-form" novalidate>
+        <div class="field"><label for="k-person">Nama admin</label><input id="k-person" maxlength="60"></div>
+        <div class="field"><label for="k-phone">Nomor telepon (tampilan)</label><input id="k-phone" maxlength="30" placeholder="+62 858-7958-2495"></div>
+        <div class="field"><label for="k-wa">Nomor WhatsApp</label><input id="k-wa" maxlength="20" inputmode="numeric" placeholder="6285879582495"><small>Hanya angka, diawali 62 tanpa tanda +.</small></div>
+        <div class="field"><label for="k-email">Email</label><input id="k-email" type="email" maxlength="120"><small>Email notifikasi pesan masuk dikirim ke alamat ini.</small></div>
+        <div class="field full"><label for="k-address">Alamat</label><textarea id="k-address" maxlength="300"></textarea></div>
+        <div class="field full"><label for="k-maps">Link Google Maps</label><input id="k-maps" maxlength="500" placeholder="https://maps.app.goo.gl/..."></div>
+        <div class="full"><button class="btn btn-navy" type="submit" id="k-save"><span class="spin" aria-hidden="true"></span>Simpan kontak</button></div>
+      </form>
+    </section>
+  </main>
+</div>
+
+<div class="modal" id="editor" hidden role="dialog" aria-modal="true" aria-labelledby="ed-title">
+  <div class="modal-card wide">
+    <div class="modal-head"><h3 id="ed-title">Proyek</h3><button class="icon-btn" type="button" data-close aria-label="Tutup"><svg><use href="#i-x"/></svg></button></div>
+    <div class="modal-body">
+      <div class="ed-grid">
+        <div class="field"><label for="ed-name">Nama pekerjaan</label><input id="ed-name" maxlength="120" placeholder="Contoh: Pek. Saluran U-Ditch"></div>
+        <div class="field"><label for="ed-cat">Kategori</label><select id="ed-cat"></select></div>
+      </div>
+      <div class="ph-head"><b>Foto</b><span id="ed-count"></span></div>
+      <div class="ph-grid" id="ed-photos"></div>
+      <label class="drop" for="ed-files"><input id="ed-files" type="file" accept="image/png,image/jpeg,image/webp" multiple><svg class="ic"><use href="#i-plus"/></svg><span><b>Tambah foto</b> JPG, PNG, atau WebP. Foto dikecilkan otomatis sebelum diunggah.</span></label>
+      <p class="a-err" id="ed-err" role="alert"></p>
+    </div>
+    <div class="modal-foot"><button class="btn btn-line" type="button" data-close>Batal</button><button class="btn btn-navy" type="button" id="ed-save"><span class="spin" aria-hidden="true"></span>Simpan proyek</button></div>
+  </div>
+</div>
+
+<div class="modal" id="confirm" hidden role="alertdialog" aria-modal="true" aria-labelledby="cf-title">
+  <div class="modal-card">
+    <div class="modal-body"><h3 id="cf-title">Hapus?</h3><p id="cf-text"></p></div>
+    <div class="modal-foot"><button class="btn btn-line" type="button" data-close>Batal</button><button class="btn btn-danger" type="button" id="cf-ok">Hapus</button></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/admin.js"></script>
+</body>
+</html>

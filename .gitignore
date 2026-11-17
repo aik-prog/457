@@ -18,3 +18,5 @@ venv/
 tools/output/
 *.tmp.mp4
 *.wav
+.vercel/
+node_modules/
