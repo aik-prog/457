@@ -131,7 +131,7 @@ Kategori yang tersedia: `jalan`, `air`, `fo`, `mep`.
 
 ## Tampilan saat dibagikan
 
-Saat link dibagikan di WhatsApp atau media sosial, gambar pratinjau diambil dari `img/og-image.jpg`. Setelah website online, ganti isi `og:image` di `index.html` dengan alamat lengkap, misalnya `https://USERNAME.github.io/cv-empat-lima-tujuh/img/og-image.jpg`, karena sebagian aplikasi hanya membaca alamat lengkap.
+Saat link dibagikan di WhatsApp atau media sosial, gambar pratinjau diambil dari `img/og-image.jpg` lewat alamat lengkap `https://aik-prog.github.io/457/img/og-image.jpg` di `index.html`. Bila website pindah ke domain lain, ganti alamat di `og:url`, `og:image`, `twitter:image`, dan `canonical` pada `index.html`.
 
 ## Membuat ulang video dan musik (opsional)
 
